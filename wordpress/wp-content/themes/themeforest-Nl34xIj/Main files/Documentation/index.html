@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html id="html">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>trobica Help Guide | Theme of trobica</title>
+    <style type="text/css">
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+            margin: 0;
+            padding: 0;
+        }
+        * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+        :before, :after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+        img, object, embed {max-width: 100%; height: auto;}
+        object, embed {height: 100%;}
+        img { margin: 1.25% 0; -ms-interpolation-mode: bicubic; }
+        html {
+            background-color: #F0F1F3;
+            padding: 2%;
+        }
+        body {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #242424;
+            max-width: 800px;
+            margin: 5% auto;
+
+        }
+        body::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        header {
+            margin-bottom: 8%;
+        }
+        footer {
+            text-align: center;
+        }
+        h1, h2, h3, h4, h5, h1 a {
+            color: #263A48;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        h1, h2 {
+            font-size: 36px;
+            padding-bottom: 0.3em;
+            margin-bottom: 0.4em;
+            border-bottom: 1px solid #eee
+        }
+        h2 {
+            font-size: 22px;
+            padding-bottom: 0.6em;
+            margin-bottom: 0.6em;
+            margin-top: 2.5em;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 0.3em;
+        }
+        h1 small a {
+            color: #98999C;
+            font-size: 15px;
+            font-weight: normal;
+            float: right;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 1%;
+            position: relative;
+            padding: 6% 8%;
+        }
+        blockquote {
+            border-left: 3px solid #d54e21;
+            font-size: 16px;
+            padding: 0 0 0 20px;
+            color: #d54e21;
+        }
+        blockquote a {
+            color: #d54e21;
+            font-weight: 500;
+        }
+        blockquote code {
+            color: #d54e21;
+        }
+        code, cite {
+            background-color: #F0F2F4;
+            border-radius: 3px;
+            color: #000;
+            font: inherit;
+            padding: 2px 7px;
+            white-space: nowrap;
+        }
+        a {
+            color: #1e8cbe;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #d54e21;
+        }
+        ul {
+            list-style: none;
+        }
+        ol {
+            list-style: number;
+        }
+        ol li {
+            color: #98999C;
+            margin-bottom: 5px;
+        }
+        ol li:last-child {
+            margin-bottom: 0;
+        }
+        p, ul, ol, blockquote  {
+            margin-bottom: 4%;
+        }
+        ul ul {
+            padding-top: 0;
+            margin-bottom: 0;
+            margin-left: 4%;
+        }
+        ul ul li:before {
+            content: '-';
+            display: inline-block;
+            padding-right: 2%;
+        }
+
+        ul.col-2 {
+            color: #98999C;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px;
+        }
+
+        @media screen and (min-width: 500px) {
+            ul.col-2 {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
+                -webkit-column-gap: 20px;
+                -moz-column-gap: 20px;
+                column-gap: 20px;
+            }
+        }
+        nav {
+            background: #F0F1F3;
+            min-width: 215px;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+        nav:first-of-type a {
+            color: #d54e21;
+            border-radius: 0;
+        }
+        nav:first-of-type a:hover {
+            color: #d54e21;
+        }
+        nav:first-of-type a:before {
+            background-color: #d54e21;
+        }
+        nav.affix {
+            position: fixed;
+            top: 20px;
+        }
+        nav.affix-bottom {
+            position: absolute;
+        }
+        nav a {
+            border-radius: 3px;
+            font-size: 15px;
+            display: block;
+            cursor: pointer;
+            font-weight: 500;
+            position: relative;
+            text-decoration: none;
+            padding: 10px 12px;
+            width: 100%;
+            padding-right: 3px;
+            border-bottom: 2px solid #fff;
+        }
+        nav a:before {
+            content: '';
+            width: 4px;
+            display: block;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            display: none;
+            background: #1e8cbe;
+            top: 0;
+        }
+        nav a:hover {
+            background-color: #E6E8EA;
+            color: #1e8cbe;
+            text-decoration: underline;
+        }
+        nav a:hover:before {
+            display: block;
+        }
+        nav a:last-of-type {
+            border-bottom: none;
+        }
+        .gist {
+            margin-top: 5.1%;
+            margin-bottom: 5%;
+        }
+        @media screen and (max-width: 1050px) {
+            body {
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            header span {
+                display: none;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 514px) {
+            p, ul, ol, blockquote  {
+                margin-bottom: 8%;
+            }
+        }
+        .bgb {background: #eeeeee;}
+    </style>
+</head>
+
+<body>
+    <section id="Menu">
+        <header>
+            <h1>Trobica WordPress theme</h1>
+            <p>Set-up & general guide to help you get the most out of your new WordPress theme. If you are still having trouble after reading this guide, <a href="https://themeforest.net/user/themes_story">contact our help team</a>.</p>
+        </header>
+        <nav>
+            <a href="http://www.innovationplans.com/themeforest/trobica/wp" target="blank">Live Demo</a>
+            <a href="http://www.innovationplans.com/themeforest/trobica/docs/" target="blank">Live Documentation</a>
+
+        </nav>
+        <nav>
+            <a href="#GettingStarted">Getting Started</a>
+
+            <a href="#Navigation">Navigation</a>
+
+            <a href="#Plugins">Plugins</a>
+
+            <a href="#Demo">One click Demo import</a>
+
+            <a href="#Customization">Customization</a>
+
+            <a href="#Contactform">Contact form</a>
+
+            <a href="#Builder">Builder</a>
+
+            <a href="#Widgets">Widgets</a>
+
+            <a href="#Updates">Updates</a>
+
+            <a href="#ThemeLicenseKey">Theme License</a>
+
+            <a href="#ChildTheme">trobica Child</a>
+
+        </nav>
+    </section>
+
+    <section id="GettingStarted">
+
+        <h1><a href="#GettingStarted">Getting Started</a><small><a href="#html">Back to Top</a></small></h1>
+
+        <p>This document covers the installation, set up, and use of this theme, and provides answers and solutions to common problems. We encourage you to first read this document thoroughly if you are experiencing any difficulties before contacting our support team.</p>
+
+        <h2>trobica</h2>
+
+        <p>trobica theme has many more customization options including typographic selectors, stylistic color pickers and other add-ons. And in addition to these fantastic features, you'll also receive dashboard one-click updates and access to world-class theme support by our team of in-house professional WordPress developers.</p>
+
+
+        <h2>WordPress Upload</h2>
+        <p>To upload through your Dashboard, select “Appearance” and then “Themes”. Next, select the “Install Themes” tab at the top of the page and then select the “Upload” link, right above the search field. Choose your file and select “Install Now”. Once the theme is fully uploaded and installed, click “Activate” to activate the WordPress theme.</p>
+        <blockquote>The theme files will be stored on your server in the <code>wp-content/themes</code> location.</blockquote>
+        <p>When uploading your theme with the installer, please ensure you are uploading the theme .zip file, not the entire package you downloaded. In this case, you will be uploading trobica.zip.</p>
+
+        <h2>FTP Upload</h2>
+        <p>To manually upload your new WordPress theme, login with your credentials to your website and locate the wp-content folder in your WordPress install files. Upload the <b>un-zipped</b> <em>trobica</em> folder into the: wp-content/themes folder. </p>
+        <p>Once uploaded, activate the theme by heading to the “Themes” menu in the WordPress Dashboard. Locate the <em>trobica</em> theme and hit “Activate”.</p>
+
+
+
+        <h2>Premium Theme Setup</h2>
+        <p>If you're looking for WordPress theme installation and setup to look exactly like the live theme demo - then we're here to help. Fast & simple for only $49.</p>
+
+
+        <p>Our in-house team of professional developers will install the theme, upload the demo XML file, and setup your website exactly like the live demo. Frustration free. Complete your purchase of the Theme Setup service and send us your deliverables.</p>
+
+        <h3>Deliverables:</h3>
+        <ul>
+            <li>Domain name</li>
+            <li>FTP information</li>
+            <li>WordPress admin credentials</li>
+            <li>Theme files or ThemeForest item purchase code</li>
+        </ul>
+
+        <h2>Theme Support</h2>
+        <p>If you have a problem with the theme or found a bug, please let us know via our official <a href="https://themeforest.net/user/themes_story">Help Center</a>. We take pride in our customer support and we will do what we can to assist you. If you are experiencing a theme issue, please first turn off all third party plugins to see if the problem persists.</p>
+        <blockquote>Please note that support is only offered for <em>trobica</em> theme. If you already have a Pro license and have any questions that are beyond the scope of this document, feel free to ask us via our dedicated <a href="https://themeforest.net/user/themes_story" target="blank">help center</a>.</blockquote>
+
+    </section>
+
+    <section id="Navigation">
+
+        <h1><a href="#Navigation">Navigation</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>It is rather important to set your theme menu in the WordPress Dashboard. To do this, locate the Menu options by selecting the “Appearance” tab from the dashboard sidebar and then “Menus”.</p>
+        <p>Once you’re viewing the Menus, create a new menu and save it. After you’ve saved the menu, you can add it to a menu via the Menu Settings, below the Menu Structure area. Add your pages and links to the menu you just created in the Menu Structure area.</p>
+        <img src="images/menus.jpg">
+
+   
+
+    </section>
+
+        <section id="Plugins">
+
+
+        <h1><a href="#Plugins">Plugins</a><small><a href="#html">Back to Top</a></small></h1>
+        <h2> Plugin install</h2>
+        <p>To install any of our free plugins, head over to our website and simply download the plugin files. Once you’ve successfully downloaded a zip file, head to your WordPress Dashboard and select “Plugins > Add New > Upload.”</p><p>Add the zipped file in the field there and click “Upload.” Upon a successful upload, you’ll be prompted to activate the plugin.</p>
+
+        <h2> Required Plugins</h2>
+            <p>The follwing free plugins required to be installed and activated prior import the demo content as upcoming</p>
+        <ul>
+               <li> <a href="https://wordpress.org/plugins/elementor/">Elementor Page Builder</a> </li>
+               <li> <a href="#0">trobica Addons for Elementor</a></li>
+                <li><a href="https://wordpress.org/plugins/one-click-demo-import/">One Click Demo Import</a></li>
+        </ul>
+
+
+    </section>
+
+        <section id="Demo">
+
+        <h1><a href="#Demo">One click demo import</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>Located inside the <code>/demo content</code> folder within the package contents, you'll find a <em>costomize.dat, content.xml and widget.wie </em> files. This file contains the live demo's data, widgets and costomization.</p><p>To import, first install and activate the <a href="https://wordpress.org/plugins/one-click-demo-import/">One Click Demo Import</a> WordPress plugin, which is available as a free download. After you're successfully running the plugin, head to  <cite>Appearance >> Import Demo Data </cite> section.</p>
+
+        <img src="images/one-click-demo-import.jpg">
+
+        <p>Find out more on <a href="https://wordpress.org/plugins/">installing and activating plugins</a>.</p>
+
+
+    </section>
+
+    <section id="Customization">
+
+        <h1><a href="#Customization">Customization</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>The customization panel allaw the live customization of <code>header</code>, <code>footer</code> logo, social media links, color, widgets, menu and other more options.
+
+        <img src="images/customization.jpg">
+
+    </section>
+
+    <section id="Contactform">
+
+        <h1><a href="#Contactform">Contact form 7</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>This plugin is used to display contact form for your page. To set this, choose contact menu in admin menu. And input your information for it.&nbsp; You can see the docs <a href="http://contactform7.com/docs/">here </a>This is the code that i create for my demo:</p>
+
+        <pre class="prettyprint lang-html linenums">
+
+    [text* your-name placeholder &quot;Your Name...&quot; ]
+    [tel* cell-phone placeholder &quot;Cell Phone...&quot; ]
+         
+    [email* your-email placeholder &quot;Email Address...&quot;]
+    [text* subject placeholder &quot;Subject...&quot; ]
+
+    [textarea your-message placeholder &quot;Your Message&quot;]
+         
+    [submit &quot;Send Message&quot;]
+    </pre>
+
+    </section>
+
+        <section id="Builder">
+
+        <h1><a href="#Builder">Elementor Live Page Builder</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>This theme is powered by <a href="https://www.elementor.com/">Elementor Builder</a> So you can easily creating page with page builder powered by this plugin.</p>
+        <p> You can visit <a href="https://docs.elementor.com/">this page</a> for more detail explanation for using this page builder plugin.</p>
+
+        <img src="images/builder.jpg">
+        <p> Elementor setting #1</p>
+        <img src="images/builder-set1.jpg">
+
+    </section>
+
+    
+ 
+
+    <section id="Widgets">
+
+        <h1><a href="#Widgets">Widgets for side bar</a><small><a href="#html">Back to Top</a></small></h1>
+
+        <h2>Using the Widgets</h2>
+        <p>To employ a widget, simply go to your Widgets editor (located in your WordPress Dashboard in the “Appearance” menu) and drag your widgets into the specified widget areas.</p>
+
+    </section>
+
+
+
+    <section id="Updates">
+
+        <h1><a href="#Updates">Updates</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>If you've requested and entered your theme license key, then you'll automatically be notified of any theme updates as we push them. This is the most effective method for getting updates pushed to you quickly and effienctly. </p>
+
+        <h2>Check for Updates</h2>
+        <p>To check your theme version, click the live changelog link below and check the version number at the top of the changelog.txt file:</p>
+        <p>Relay the changelog version at the top of that changelog.txt file with the version in your WordPress Dashboard > Appearance > Themes section to see if your theme files are up to date.</p>
+
+        <p>If you are in need of the update, download the current build from the location you purchased the theme from ThemeForest to install the updated theme.</p>
+
+        <blockquote>If you have an active license key applied to your theme, you will receive live update notifications to which allows one-click updates directly from your WordPress dashboard.</blockquote>
+
+        <h2>FTP Updating</h2>
+        <p>If you have not customized the original theme files then you may simply drop the updated theme folder contents into the theme folder on your server – which is located in wp-content/themes/trobica.</p>
+        <p>If you wish to upload the entire updated theme as a separate theme, ensure you:</p>
+        <ul>
+            <li>Rename the updated theme’s folder (different from the current theme)</li>
+            <li>Drop the renamed theme folder into wp-content/themes</li>
+            <li>Switch to the new theme via your WordPress Dashboard</li>
+        </ul>
+        <p>If you choose to upload the whole theme and switch to it, you may lose your Theme Customizer data and will have to add those back in.</p>
+
+        <h2>FTP Selective Updating</h2>
+        <p>On the other hand, if you have customized some files in the core theme contents, you should consider selective updating, which simply means updating only the files that are pointed out in the theme’s changelog.</p>
+        <p>There are a couple programs out there that will allow you to compare versions of files, in order to catch customizations you may not remember. Some recommended programs are <a href="http://winmerge.org/">WinMerge</a> (Windows), <a href="http://www.kaleidoscopeapp.com/">Kaleidoscope</a> (OSX), and handy GitHub <a href="http://mac.github.com/">(OSX)</a> & <a href="http://windows.github.com/">(Windows)</a>.</p>
+
+        <h2>Recommended</h2>
+        <p>Overall, the safest and cleanest way to update your theme is to leave your currently modified theme on your server/site as is, rename the folder of the newly updated theme, upload the new theme, and modify that to match your original custom work. In this way, if something has gone wrong with the new version, you’re just a few clicks away from getting things back to how they originally were.</p>
+
+    </section>
+
+    <section id="ThemeLicenseKey">
+
+        <h1><a href="#ThemeLicenseKey">Theme License Key</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>Once you've <b>located your license key on your purchase receipt</b>, you may enter the key on the "Theme License" dashboard widget, located on your <code>WP Dashboard</code>.</p><p>Once your license key is entered, hit the "Save License" button - then the "Activate" button that appears after the page refreshes. Upon a successful activation you’ll see a green “Active” tag next to the widget title.</p>
+
+        <blockquote>Please note that licenses are only given for trobica - not the free version.</blockquote>
+
+        <img src="images/license.jpg">
+
+        <h2>What is the license key for?</h2>
+        <p>It is important to keep your license up to date in order to continue getting updates for your WordPress theme and support for any issues you may encounter. Renewing your license grants you access to support and updates for six months, including all updates for bug fixes and feature introductions.</p><p>Without a valid theme license, you will be unable to get support and receive theme updates.</p>
+
+        <blockquote>If your key is not applied after hitting the Activate button, simply re-enter the key and try again. Sometimes it takes a few tries to properly establish a connection with the activation server.</blockquote>
+
+        <h2>What if my license key has expired?</h2>
+        <p>License keys may be renewed at a discount on our website. You will get a renewal notification in the license key dashboard widget if your license is about to expire, or has indeed expired.</p>
+
+    </section>
+
+    <section id="ChildTheme">
+
+        <h1><a href="#ChildTheme">trobica Child Theme</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>A child theme is a theme that inherits the functionality and styling of another theme, called the parent theme. Child themes are <b>the recommended way of modifying an existing theme</b>.</p>
+
+        <h2>Why use a Child Theme?</h2>
+        <p>There are one main reason why you would want to use a child theme: <b>If you modify a theme directly and it is updated, then your modifications <u>WILL</u> be lost.</b> By using a child theme you will ensure that your modifications are preserved.</p>
+
+        <h2>Installing the Child theme</h2>
+        <p>Log in to your site's administration panel, and go to Administration Panels > Appearance > Themes. Click "Add New" and follow the directions to upload the <cite>trobica-child.zip</cite> file, located in the <cite>trobica-package/theme/</cite> folder.</p><p>Next simply click "Activate" and both the trobica theme and trobica child theme will be active on your WordPress site. Now you're ready to customize away.</p>
+
+        <blockquote>Note that this is the same exact method we referred to in the <a href="#GettingStarted">Getting Started</a> section of this guide. You should see your child theme listed and ready for activation.</blockquote>
+
+        <h2>Customizing Template Files</h2>
+        <p>If you want to change more than just the stylesheet, your child theme can override any file in the parent theme: simply include a file of the same name in the child theme directory, and <u>it will override the equivalent file</u> in the parent theme directory when your site loads.</p><p>For instance, if you want to change the PHP code for the site header, you can include a header.php in your child theme's directory, and that file will be used instead of the parent theme's header.php.</p>
+
+        <h2>Child Theme Functions.php</h2>
+        <p>Unlike style.css, the functions.php of a child theme does not override its counterpart from the parent. Instead, it is loaded in addition to the parent’s functions.php. (Specifically, it is loaded right before the parent’s file.)</p>
+
+        <p>In that way, the functions.php of a child theme provides a smart, trouble-free method of modifying the functionality of a parent theme.</p>
+
+        <h2>Adding PHP Functions</h2>
+        <p>Say that you want to add a PHP function to your theme. The fastest way would be to open the trobica /functions.php file and put the function there... <b>But that’s not smart:</b> The next time trobica is updated, your function will disappear (as the entire contents of the /trobica/ folder are replaced upon an update.</p><p>However, there is an alternative way which is the smart way: you can create a child theme, add a functions.php file in it, and add your function to that file. The function will do the exact same job from there too, with the advantage that it will not be affected by future updates of the parent theme.</p>
+
+        <blockquote><b>DO NOT</b> copy the full content of functions.php of the parent theme into functions.php in the child theme. It's not a good practice by any means.</blockquote>
+
+
+    </section>
+
+
+</body>
+</html>
